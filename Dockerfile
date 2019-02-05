@@ -14,8 +14,9 @@ ENV SECRET_KEY="change-me-in-production"
 ENV BIND="0.0.0.0:80"
 ENV WORKERS="2"
 ENV GOOGLE_TRACKING_ID=""
-ENV AZURE_APPINSIGHTS_IKEY=""
+#ENV AZURE_APPINSIGHTS_IKEY=""
 
 EXPOSE 80
+VOLUME /doccano
 
 CMD ["/doccano/tools/run.sh"]
